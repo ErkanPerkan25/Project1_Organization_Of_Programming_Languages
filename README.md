@@ -8,12 +8,12 @@ seeing as you have not been given a language specifcation (i.e. grammar)
 Arch Linux
 
 - Details to compile program:<br>
-To compile the program you run the command 'make' as it has a Makefile<br>
-`make`
+To compile the program you run the command `make` as it has a Makefile<br>
+```make```
 
 - Details to run program: 
 To run the program you run the following command:<br>
-`./lex <input_file>`
+```./lex <input_file>```
 
 - Any known bugs?
 
