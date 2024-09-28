@@ -3,8 +3,8 @@ LEX ?= flex++
 
 CXXFLAGS := -Wall -ansi -pedantic -std=c++20
 
-lexington: main.o lex.yy.o Token.o
-	$(CXX) -o lexington main.o lex.yy.o Token.o
+lex-analyzer: main.o lex.yy.o Token.o
+	$(CXX) -o lex-analyzer main.o lex.yy.o Token.o
 
 main.o: main.cpp
 	$(CXX) $(CXXFLAGS) -c main.cpp
@@ -19,6 +19,6 @@ lex.yy.cc: lex.l
 	$(LEX) lex.l
 
 clean:
-	rm -rf lexington *.o
+	rm -rf lex-analyzer lex.yy.cc *.o
 
 .PHONY: clean
