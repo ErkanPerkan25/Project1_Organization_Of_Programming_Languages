@@ -17,7 +17,6 @@ ID          [a-zA-Z][a-z0-9A-Z]*
 DIGIT       [0-9]
 NZDIGIT     [1-9]
 WSPACE      [\ \t\n]
-COMMENT     [,a-zA-Z0-9\ ]*
 
 %%
 <<EOF>>                 {return 23;}    /*If EOF, send rc 23 */
@@ -31,7 +30,7 @@ then                    {return 30;}    /*Keyword for then, rc 30*/
 else                    {return 31;}    /*Keyword for else, rc 31*/
 while                   {return 32;}    /*Keyword for whilie, rc 32*/
 
-"#"+{COMMENT}                     {}    /*Expression for comments*/
+"#".*                     {}    /*Expression for comments*/
 
 
 {ID}                    {return 1;}     /*Expression for Tokens of type ID_T*/
