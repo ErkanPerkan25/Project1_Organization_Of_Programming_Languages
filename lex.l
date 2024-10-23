@@ -53,8 +53,8 @@ while                   {return 32;}    /*Keyword for whilie, rc 32*/
 "["                     {return 17;}    /*Expression for Tokens of type LBRACK_T*/
 "]"                     {return 18;}    /*Expression for Tokens of type RBRACK_T*/
 ","                     {return 19;}    /*Expression for Tokens of type COMMA_T*/
-"("                     {return 20;}    /*Expression for Tokens of type LPAREN_T*/
-")"                     {return 21;}    /*Expression for Tokens of type RPAREN_T*/
+"("                     {return 21;}    /*Expression for Tokens of type LPAREN_T*/
+")"                     {return 20;}    /*Expression for Tokens of type RPAREN_T*/
 "~"                     {return 22;}    /*Expression for Tokens of type NOT_T*/
 
 {WSPACE}+               {}
