@@ -1,6 +1,9 @@
-# Project1 - Organization Of Programming Languages
-To build a lexical analyzer for a programming language using Flex++. 
-## **Eric Hansson**
+# Lexical Analyzer
+
+**Project1 - Organization Of Programming Languages**
+Overview: To build a lexical analyzer for a programming language using Flex++. 
+
+Author: **Eric Hansson**
 
 - Platform:<br>
 Arch Linux
